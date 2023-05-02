@@ -1,0 +1,66 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 32px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin-right: 451px;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav__link {
+    margin-right: 40px;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttonWithouBg {
+    background: transparent;
+    margin-right: 60px;
+}
+
+.buttonBlack {
+    background: #000;
+    display: flex;
+    align-items: center;
+    padding: 15px 35px;
+    border-radius: 40px;
+}
+
+.buttonBlack:hover {
+    background: #202020;
+}
+
+.buttonText {
+    color: #fff;
+}
+
+.login {
+    font-weight: 500;
+}
+
+.imgBtn {
+    margin-left: 10px;
+}

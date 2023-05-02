@@ -1,0 +1,583 @@
+@import url(./components/header.css);
+@import url(./components/footer.css);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    color: #000;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    color: #000;
+    font-size: 42px;
+    font-weight: 500;
+    max-width: 600px;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ====== INTRO ====== */
+.intro {
+    background: #C3EAD8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.mainTitle {
+    max-width: 518px;
+    line-height: 1.4;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.buttonBlack.inIntro {
+    margin: 80px 0;
+}
+
+.leftIcon {
+    margin-right: 10px;
+}
+
+.expirience {
+    display: flex;
+}
+
+.expirience__Item {
+    display: flex;
+    align-items: center;
+}
+
+.expirience__Item:first-child {
+    border-right: 2px solid #000;
+}
+
+.expirience__Item:last-child {
+    margin-left: 60px;
+}
+
+.expirience__text {
+    width: 165px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.intro__item:last-child {
+    position: relative;
+}
+
+.imageIntro {
+    position: absolute;
+}
+
+/* images */
+
+.first {
+    top: -40px;
+    right: 150px;
+}
+
+.second {
+    right: 130px;
+}
+
+.third {
+    right: 0;
+}
+
+.fourth {
+    right: 250px;
+    bottom: -180px;
+    transition: .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* ====== HOW SECTION ====== */
+.how {
+    margin-bottom: 180px;
+}
+
+.how__title {
+    margin: 100px 0;
+}
+
+.how__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how__item {
+    text-align: center;
+    max-width: 262px;
+}
+
+.how__img {
+    height: 183px;
+    width: 163px;
+}
+
+.howItem__title {
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.howItem__tex {
+    font-weight: 600;
+}
+
+.href {
+    font-weight: 700;
+}
+
+.card__text {
+    padding: 20px 20px 60px 20px;
+    border-radius: 20px;
+}
+
+.how__item:hover .card__text{
+    box-shadow: 55px 10px 50px rgba(0, 0, 0, 0.068);
+}
+
+/* ====== USE ====== */
+.head {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.use__content {
+    position: relative;
+}
+
+.use__item {
+    display: flex;
+    margin-bottom: 250px;
+    width: 100%;
+    background: #F8E7DF;
+}
+
+.use__item.second {
+    background: #EEF2FB;
+}
+
+.use__item.third {
+    background: #E1F5EB;
+}
+
+.textUse {
+    padding: 100px 0 100px 60px;
+}
+
+.subtitle.inUseSection {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 100px auto;
+}
+
+.buttonHref {
+    margin-right: 20px;
+}
+
+.buttonBlack.inUseSection {
+    padding: 18px 66px;
+    background: transparent;
+    border: 1px solid #000;
+}
+
+.buttonText.inUseSection {
+    color: #000;
+    font-weight: 600;
+}
+
+.subtitle.use {
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+
+/* images */
+
+.useImages {
+    display: flex;
+    align-items: center;
+}
+
+.balanceUse {
+    width: 420px;
+    height: 179px;
+    border-radius: 15px;
+    z-index: 3;
+    margin-top: 200px;
+}
+
+.phoneUse {
+    position: absolute;
+    right: 73px;
+}
+
+.phoneUse.second {
+    left: 0;
+}
+
+.balanceUse.second {
+    margin: 100px 0 0 250px;
+    width: 100%;
+}
+
+.balanceUse.third {
+    width: 325px;
+    height: 316px;
+    margin-top: 0;
+    margin-left: 100px;
+}
+
+/* ====== WHY SECTION ====== */
+.why__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.why__item {
+    border: 1px solid #000;
+    border-radius: 16px;
+    max-width: 600px;
+    background: #fff;
+    padding: 40px 0 40px 40px;
+    transition: all .2s linear;
+}
+
+.yellowBg {
+    background-color: #FEF86B;
+    border-radius: 16px;
+    max-width: 600px;
+    margin-bottom: 100px;
+}
+
+.why__item:hover {
+    background: #C9ECDC;
+    transform: translate(20px, -20px);
+}
+
+.why__item:hover .why_img {
+    background: #fff;
+}
+
+.whyCard__title {
+    display: flex;
+    align-items: center;
+}
+
+.why_img {
+    padding: 19px;
+    background: #FEF86B;
+    border-radius: 8px;
+    margin-right: 16px;
+    transition: all .2s linear;
+}
+
+.why_title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.subtitle.why {
+    max-width: 520px;
+}
+
+/* ====== SUPPORT ====== */
+.section {
+    margin-top: 80px;
+}
+
+.sectionTitle,
+.subtitle.section {
+    text-align: left;
+    max-width: 639px;
+}
+
+.subtitle.sectionTitle {
+    margin-bottom: 60px;
+}
+
+.section__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ====== CONNECT ====== */
+.inConnectSection {
+    margin-bottom: 100px;
+}
+
+.connectTitle {
+    max-width: 684px;
+}
+
+.inputs {
+    margin-top: 32px;
+}
+
+.input {
+    width: 306px;
+    padding: 20px 0 20px 40px;
+    border: 2px solid #AAA98D;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.input::placeholder {
+    color: #A9A547;
+}
+
+.input:focus {
+    background-color: #FEFBB5;
+}
+
+.name {
+    margin-right: 32px;
+}
+
+.textarea {
+    width: 100%;
+    max-width: 648px;
+}
+
+/* checkbox */
+.item {
+    display: flex;
+}
+
+.checkboxImg1,
+.checkboxImg2 {
+    margin-right: 12px;
+    user-select: none;
+}
+
+.checkText {
+    color: #A9A547;
+    font-weight: 500;
+    width: 100%;
+    max-width: 611px;
+    user-select: none;
+}
+
+.checkboxImg2 {
+    display: none;
+}
+
+.inputs input[type="checkbox"]:checked + label .checkboxImg2 {
+    display: block;
+}
+
+.inputs input[type="checkbox"]:checked + label .checkboxImg1 {
+    display: none;
+}
+
+/* button */
+.buttonInput {
+    background-color: #333215;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    max-width: 648px;
+    padding: 20px 0;
+    border-radius: 6px;
+}
+
+/* ====== PARTNERS ====== */
+.logo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageLogo {
+    padding: 135px 180px;
+}
+
+.imageLogo:hover {
+    box-shadow: 55px 10px 50px rgba(0, 0, 0, 0.068);
+}
+
+/* ====== COMMENTS ====== */
+.slider {
+    display: block;
+    position: relative;
+    margin-top: 150px;
+    padding: 100px 0 150px 0;
+    border-radius: 20px;
+}
+
+.qoute {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.slider__item {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider__text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slider__name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* ====== QUESTIONS ====== */
+.questions {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.question__item {
+    margin-top: 50px;
+}
+
+.question__item:last-child {
+    margin-bottom: 100px;
+}
+
+.question__item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #D7DBE6;
+    margin-top: 20px;
+}
+
+.question__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question__text {
+    max-width: 970px;
+    display: none;
+}
+
+.question__text.active {
+    display: block;
+}
+
+.button__question {
+    display: none;
+}
+
+.button__question.active {
+    display: block;
+}
+
+.button_question_plus.active {
+    display: none;
+}
+
+/* ====== SIGN ====== */
+.sign {
+    margin: 200px 0 100px 0;
+}
+
+.sign__inner {
+    width: 100%;
+    background: #1C4F38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    border-radius: 16px;
+}
+
+.signText {
+    color: #fff;
+    max-width: 541px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+}
+
+.input_email {
+    padding: 20px 40px;
+    font-size: 17px;
+    width: 424px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 40px;
+}
+
+.input_email:focus {
+    outline: none;
+}
+
+.buttonSign {
+    width: 100%;
+    max-width: 180px;
+    font-size: 17px;
+    background: #FEF86B;
+    border-radius: 30px;
+}
