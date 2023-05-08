@@ -69,3 +69,33 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+@media(max-width: 1100px) {
+    .footer__inner {
+        display: block;
+    }
+
+    .footer_three {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 800px) {
+    .footer_three {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__item {
+        text-align: center;
+    }
+
+    .footer__col {
+        margin: 30px 0;
+    }
+
+    .footer__text,
+    .links {
+        margin: 30px auto;
+    }
+}

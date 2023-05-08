@@ -60,7 +60,7 @@ textarea {
 .intro {
     background: #C3EAD8;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -68,10 +68,15 @@ textarea {
 .intro__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .mainTitle {
     max-width: 518px;
     line-height: 1.4;
+}
+
+.intro_image {
+    margin-bottom: 13px;
 }
 
 .subtitle {
@@ -110,35 +115,6 @@ textarea {
     font-size: 18px;
     font-weight: 500;
     margin-left: 12px;
-}
-
-.intro__item:last-child {
-    position: relative;
-}
-
-.imageIntro {
-    position: absolute;
-}
-
-/* images */
-
-.first {
-    top: -40px;
-    right: 150px;
-}
-
-.second {
-    right: 130px;
-}
-
-.third {
-    right: 0;
-}
-
-.fourth {
-    right: 250px;
-    bottom: -180px;
-    transition: .6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /* ====== HOW SECTION ====== */
@@ -564,7 +540,8 @@ textarea {
 .input_email {
     padding: 20px 40px;
     font-size: 17px;
-    width: 424px;
+    width: 100%;
+    max-width: 424px;
     border-radius: 30px;
     border: none;
     margin-right: 40px;
@@ -580,4 +557,319 @@ textarea {
     font-size: 17px;
     background: #FEF86B;
     border-radius: 30px;
+}
+
+@media(max-width: 1400px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .intro_image {
+        width: 100%;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .intro__inner {
+        margin-bottom: 150px;
+    }
+}
+
+@media(max-height: 1380px) {
+    .intro {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .intro__inner {
+        display: block;
+        text-align: center;
+    }
+
+    .intro__item:last-child {
+        margin: 50px auto;
+    }
+
+    .imageIntro {
+        height: 60%;
+    }
+
+    .imageIntro.first {
+        height: 300px;
+        width: 300px;
+        top: 30px;
+    }
+
+    .imageIntro.second {
+        right: 80px;
+    }
+
+    .imageIntro.fourth {
+        bottom: 200px;
+        width: 200px;
+        height: 200px;
+        right: 150px;
+    }
+
+    .mainTitle,
+    .subtitle,
+    .buttonBlack.inIntro {
+        margin: 50px auto;
+    }
+
+    .expirience {
+        justify-content: center;
+    }
+
+    .expirience__Item {
+        margin-left: 30px !important;
+    }
+
+    .how__inner,
+    .use__item {
+        display: block;
+    }
+
+    .how__item {
+        margin: 50px auto;
+    }
+
+    .textUse {
+        text-align: center;
+        padding: 100px 30px 100px 30px;
+    }
+
+    .useTitle {
+        margin: 0 auto;
+    }
+
+    .subtitle.use {
+        max-width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .useImages {
+        height: 670px;
+    }
+
+    .phoneUse.second {
+        left: 60px;
+    }
+
+    .phoneUse {
+        height: 670px;
+        width: 332px;
+    }
+
+    .balanceUse.second {
+        width: 50%;
+    }
+
+    /* SUPPORT */
+    .section__inner {
+        display: block;
+        text-align: center;
+    }
+
+    .sectionTitle,
+    .buttonBlack,
+    .connectTitle {
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .item {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 815px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .imgC {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input.name {
+        margin: 0 0 32px 0;
+    }
+
+    .phoneUse {
+        width: 300px;
+        height: 648px;
+    }
+
+    .balanceUse {
+        width: 300px;
+        height: 140px;
+    }
+
+    .logo_item {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .imageLogo {
+        width: 250px;
+    }
+
+    /* slider */
+    .slider__text {
+        max-width: 300px;
+        display: inline-block;
+    }
+
+    /* questions */
+    .questions {
+        max-width: 500px;
+    }
+
+    /* sign */
+    .sign__inner {
+        display: block;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 515px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .expirience {
+        display: none;
+    }
+
+    .buttons {
+        display: block;
+    }
+
+    .use__item {margin-bottom: 150px;}
+
+    .buttonBlack.inUseSection {
+        margin: 0 auto;
+    }
+
+    .phoneUse {
+        height: 448px;
+        width: 200px;
+    }
+
+    .useImages {
+        height: 470px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .balanceUse {
+        width: 200px;
+        height: 100px; 
+        margin-top: 100px;      
+    }
+
+    .balanceUse.second {
+        margin: 80px 0 0 150px;
+    }
+
+    .balanceUse.third {
+        width: 225px;
+        height: 215px;
+        margin-left: 0;
+    }
+
+    .form {
+        display: block;
+    }
+
+    .input_email,
+    .buttonSign {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .buttonSign {
+        padding: 20px 0;
+    }
+
+    .questions {
+        max-width: 300px;
+    }
+
+    .buttonBlack {
+        margin: 0 auto;
+    }
+
+    .buttonBlack.inSupport {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 47px;
+    }
+
+    .balanceUse {
+        display: none;
+    }
+
+    .phoneUse {
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+
+    .phoneUse.second {
+        left: 0;
+    }
+
+    .useImages {
+        justify-content: center;
+    }
+
+    .intro__inner {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        max-width: 270px;
+    }
+
+    h3 {
+        font-size: 37px;
+    }
+
+    .why__item {
+        max-width: 240px;
+    }
+
+    .why_title {
+        font-size: 27px;
+    }
+
 }

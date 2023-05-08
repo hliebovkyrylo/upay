@@ -64,3 +64,24 @@
 .imgBtn {
     margin-left: 10px;
 }
+
+.navForPc {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 1400px) {
+    .nav {
+        margin-right: 200px;
+    }
+
+    .imageLogo {
+        padding: 67px 90px !important;
+    }
+}
+
+@media(max-width: 1100px) {
+    .navForPc {
+        display: none;
+    }
+}у
