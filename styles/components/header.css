@@ -4,6 +4,11 @@
     left: 0;
     right: 0;
     margin: 32px 0;
+    overflow-x: hidden;
+}
+
+.header.active {
+    overflow-x: visible;
 }
 
 .header__inner {
@@ -70,6 +75,81 @@
     align-items: center;
 }
 
+.nav__toggle {
+    display: none;
+}
+
+.menu {
+    width: 43px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* styles for lines */
+
+.line {
+    background: #1D191F;
+    height: 3px;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    transition: .6s ease;
+}
+
+.line:nth-child(1) {
+    width: 100%;
+    top: 0;
+}
+
+.line:nth-child(2) {
+    width: 80%;
+}
+
+.line:nth-child(3) {
+    width: 50%;
+    bottom: 0;
+}
+
+.line.active:nth-child(1) {
+    width: 50%;
+}
+
+.line.active:nth-child(3) {
+    width: 100%;
+}
+
+.toggle__screen {
+    position: absolute;
+    width: 100%;
+    top: 86px;
+    left: 0;
+    text-align: center;
+    height: calc(100vh - 118px);
+    background: #fff;
+    z-index: 1000;
+    transform: translateX(2000px);
+    transition: .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.toggle__screen.active {
+    transform: translateX(0);
+}
+
+.nav.inToggle {
+    display: block;
+}
+
+.linkToggle {
+    margin-top: 32px;
+}
+
+.inToggle {
+    font-size: 32px;
+}
+
 @media(max-width: 1400px) {
     .nav {
         margin-right: 200px;
@@ -84,4 +164,8 @@
     .navForPc {
         display: none;
     }
-}у
+
+    .nav__toggle {
+        display: block;
+    }
+}

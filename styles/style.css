@@ -6,6 +6,12 @@ body {
     margin: 0;
 }
 
+body.blocked {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+}
+
 *,
 *::before,
 *::after {
@@ -69,6 +75,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .mainTitle {
     max-width: 518px;
@@ -179,7 +186,15 @@ textarea {
     display: flex;
     margin-bottom: 250px;
     width: 100%;
+    background: #EEF2FB;
+}
+
+.use__item:nth-child(2) {
     background: #F8E7DF;
+}
+
+.use__item:nth-child(3) {
+    background: #E1F5EB;
 }
 
 .use__item.second {
@@ -304,6 +319,7 @@ textarea {
 .why_title {
     font-size: 32px;
     font-weight: 600;
+    user-select: none;
 }
 
 .subtitle.why {
@@ -429,6 +445,10 @@ textarea {
 }
 
 /* ====== COMMENTS ====== */
+.comments {
+    overflow: hidden;
+}
+
 .slider {
     display: block;
     position: relative;

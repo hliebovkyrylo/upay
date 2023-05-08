@@ -7,6 +7,7 @@
     <title>upay</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- HEADER -->
@@ -36,6 +37,32 @@
                                 <img class="imgBtn" src="./assets/icons/add-user.png" alt="">
                             </button>
                         </a>
+                    </div>
+                </div>
+                <div class="nav__toggle">
+                    <div class="btn">
+                        <div class="menu">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="toggle__screen">
+                        <div class="linkToggle">
+                            <a class="link inToggle" href="#">Home</a>
+                        </div>
+                        <div class="linkToggle">
+                            <a class="link inToggle" href="#">Services</a>
+                        </div>
+                        <div class="linkToggle">
+                            <a class="link inToggle" href="#">Pricing</a>
+                        </div>
+                        <div class="linkToggle">
+                            <a class="link inToggle" href="#">About</a>
+                        </div>
+                        <div class="linkToggle">
+                            <a class="link inToggle" href="#">Contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,13 +356,31 @@
     <!-- COMMENTS -->
     <section class="comments">
         <div class="container">
-            <div class="slider__items">
-                <div class="use__item slider">
-                    <img class="qoute" src="./assets/logo/quote.svg" alt="">
-                    <div class="slider__item">
-                        <span class="slider__text">“I was looking for a perfect paymant solution for my freelance business. I’m using WhoodPay as my primary payment method and I will recomanded everyone who needs a best payment solution.”</span>
-                        <p class="slider__name">Al Razi Siam</p>
-                        <span class="slider__text">Founder Underrrated Studio</span>
+            <div class="mySwiper">
+                <div class="slider__items swiper-wrapper">
+                    <div class="use__item slider swiper-slide">
+                        <img class="qoute" src="./assets/logo/quote.svg" alt="">
+                        <div class="slider__item">
+                            <span class="slider__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</span>
+                            <p class="slider__name">Al Razi Siam</p>
+                            <span class="slider__text">Founder Underrrated Studio</span>
+                        </div>
+                    </div>
+                    <div class="use__item slider swiper-slide">
+                        <img class="qoute" src="./assets/logo/quote.svg" alt="">
+                        <div class="slider__item">
+                            <span class="slider__text">“I was looking for a perfect paymant solution for my freelance business. I’m using WhoodPay as my primary payment method and I will recomanded everyone who needs a best payment solution.”</span>
+                            <p class="slider__name">Al Razi Siam</p>
+                            <span class="slider__text">Founder Underrrated Studio</span>
+                        </div>
+                    </div>
+                    <div class="use__item slider swiper-slide">
+                        <img class="qoute" src="./assets/logo/quote.svg" alt="">
+                        <div class="slider__item">
+                            <span class="slider__text">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</span>
+                            <p class="slider__name">Al Razi Siam</p>
+                            <span class="slider__text">Founder Underrrated Studio</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,10 +392,10 @@
         <div class="question__item">
             <div class="question__title">
                 <span class="why_title">Are there really zero fees?</span>
-                <img class="button_question_plus active" src="./assets/icons/buton+.png" alt="">
-                <img class="button__question active" src="./assets/icons/button-.png" alt="">
+                <img class="button_question_plus" src="./assets/icons/buton+.png" alt="">
+                <img class="button__question" src="./assets/icons/button-.png" alt="">
             </div>
-            <p class="question__text active">At Upay, we believe businesses shouldn’t have to wait or pay to access money they’ve already earned. We don’t charge you to sign up. We don’t charge you when you receive payments. And we don’t charge you when you make payments. There are zero fees. Seriously.</p>
+            <p class="question__text">At Upay, we believe businesses shouldn’t have to wait or pay to access money they’ve already earned. We don’t charge you to sign up. We don’t charge you when you receive payments. And we don’t charge you when you make payments. There are zero fees. Seriously.</p>
         </div>
         <div class="question__item">
             <div class="question__title">
@@ -470,5 +515,9 @@
             </div>
         </div>
     </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
